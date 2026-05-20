@@ -37,9 +37,4 @@ function calculate() {
   element.addEventListener("change", calculate);
 });
 
-document.querySelector(".lead-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  alert("Заявка сохранена в прототипе. Для реального сайта форму нужно подключить к Telegram, CRM или почте.");
-});
-
 calculate();

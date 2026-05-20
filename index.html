@@ -13,7 +13,7 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="СтудАрт">
-        <span class="brand-mark">SA</span>
+        <img class="brand-logo" src="assets/studart-logo.png" alt="Логотип СтудАрт" />
         <span>
           <strong>СтудАрт</strong>
           <small>event-студия СурГУ</small>
@@ -21,17 +21,19 @@
       </a>
       <nav class="main-nav" aria-label="Основная навигация">
         <a href="#services">Услуги</a>
+        <a href="#studio">Студия</a>
         <a href="#about">О нас</a>
         <a href="#process">Процесс</a>
         <a href="#calculator">Калькулятор</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a class="header-action" href="#contacts">Заказать звонок</a>
+      <a class="header-action" href="https://vk.ru/studartsurgu" target="_blank" rel="noopener">Написать в VK</a>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
+          <img class="hero-logo" src="assets/studart-logo.png" alt="Логотип event-студии СтудАрт" />
           <p class="eyebrow">Студенческая event-студия при университете</p>
           <h1>Организуем праздники, о которых говорят неделями</h1>
           <p class="lead">
@@ -49,9 +51,9 @@
           </div>
         </div>
         <figure class="hero-media">
-          <img src="assets/hero.jpg" alt="Команда организует праздничное событие" />
+          <img src="assets/studart-studio-render.png" alt="Рендер интерьера event-студии СтудАрт" />
           <figcaption>
-            Живые форматы для студентов, семей, кафедр, компаний и городских площадок.
+            Так выглядит база студии: заявки, реквизит, фотозона, репетиции и мини-сцена в одном пространстве.
           </figcaption>
         </figure>
       </section>
@@ -63,6 +65,28 @@
           площадку для мероприятий и воспитательной работы, заказчики — доступные события
           с понятной организацией.
         </p>
+      </section>
+
+      <section class="section studio-section" id="studio">
+        <div class="section-heading">
+          <p class="eyebrow">Пространство</p>
+          <h2>Как выглядит студия</h2>
+          <p>
+            «СтудАрт» — это не просто кабинет с ноутбуками. Это трансформируемая база,
+            где команда принимает заявки, хранит реквизит, снимает контент, репетирует
+            программы и собирает выездные пакеты под конкретное событие.
+          </p>
+        </div>
+        <div class="studio-showcase">
+          <figure class="studio-visual main">
+            <img src="assets/studart-studio-render.png" alt="Рендер кабинета event-студии СтудАрт" />
+            <figcaption>Рендер интерьера: рабочая зона, фотозона, стеллажи с реквизитом и мини-сцена.</figcaption>
+          </figure>
+          <figure class="studio-visual">
+            <img src="assets/studart-studio-layout.png" alt="Схема зонирования event-студии СтудАрт" />
+            <figcaption>Схема зонирования: админ-зона, встречи, фото/видео, реквизит, трансформер и сборка события.</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="section" id="services">
@@ -222,29 +246,19 @@
       <section class="section two-column contacts" id="contacts">
         <div>
           <p class="eyebrow">Связь</p>
-          <h2>Оставьте заявку</h2>
+          <h2>Напишите нам во VK</h2>
           <p>
-            Форма специально короткая: имя, телефон, тип праздника и комментарий.
-            После отправки администратор уточнит детали и предложит бесплатную консультацию.
+            Все заявки, вопросы по мероприятиям и предложения по сотрудничеству принимаем
+            через страницу студии во VK.
           </p>
           <address>
-            <a href="tel:+70000000000">+7 000 000-00-00</a>
-            <a href="mailto:studart@surgu.ru">studart@surgu.ru</a>
-            <a href="https://t.me/studart_surgu">Telegram: @studart_surgu</a>
-            <a href="https://vk.com/studart_surgu">VK: vk.com/studart_surgu</a>
+            <a class="vk-link" href="https://vk.ru/studartsurgu" target="_blank" rel="noopener">vk.ru/studartsurgu</a>
           </address>
         </div>
-        <form class="lead-form">
-          <label>Имя<input type="text" name="name" placeholder="Как к вам обращаться" /></label>
-          <label>Телефон<input type="tel" name="phone" placeholder="+7 ___ ___-__-__" /></label>
-          <label>Тип праздника<select name="event"><option>Детский праздник</option><option>Корпоратив</option><option>День рождения</option><option>Выпускной</option><option>Фестиваль</option></select></label>
-          <label>Комментарий<textarea name="comment" rows="4" placeholder="Дата, гости, пожелания"></textarea></label>
-          <button class="button primary full" type="submit">Заказать звонок</button>
-        </form>
       </section>
     </main>
 
-    <a class="floating-cta" href="#contacts" aria-label="Оставить заявку">Заявка</a>
+    <a class="floating-cta" href="https://vk.ru/studartsurgu" target="_blank" rel="noopener" aria-label="Открыть VK СтудАрт">VK</a>
     <script src="script.js"></script>
   </body>
 </html>
