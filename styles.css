@@ -124,6 +124,10 @@ img {
   padding: 72px clamp(18px, 4vw, 32px);
 }
 
+section[id] {
+  scroll-margin-top: 88px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(340px, 0.85fr);
@@ -360,6 +364,8 @@ h3 {
 }
 
 .team-grid article {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   padding: 16px;
   border: 1px solid var(--line);
@@ -367,17 +373,48 @@ h3 {
   background: var(--white);
 }
 
-.team-grid img {
-  width: 74px;
-  height: 74px;
+.team-photo {
+  position: relative;
   margin-bottom: 12px;
-  border-radius: 50%;
+}
+
+.team-photo > img:first-child {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: 8px;
   object-fit: cover;
+}
+
+.team-logo-badge {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 46px;
+  height: 46px;
+  padding: 5px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 10px 22px rgba(23, 33, 47, 0.2);
+  object-fit: contain;
 }
 
 .team-grid p {
   color: var(--muted);
   font-size: 14px;
+}
+
+.team-email {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
 .process {
@@ -547,6 +584,20 @@ input[type="range"] {
   color: var(--white) !important;
   background: var(--teal);
   box-shadow: 0 10px 24px rgba(15, 139, 141, 0.22);
+}
+
+.email-list {
+  display: grid;
+  gap: 8px;
+  max-width: 560px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.email-list a {
+  overflow-wrap: anywhere;
 }
 
 .floating-cta {
